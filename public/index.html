@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auth Test</title>
+</head>
+<body>
+<main>
+
+    <div id="oauth"></div>
+
+</main>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script>
+
+  let discordURL = "https://discordapp.com/api/oauth2/authorize";
+
+  let options = {
+    client_id:'556605538662612997',
+    redirect_uri: 'http://localhost:3000/oauth',
+    response_type: 'code',
+    scope: 'identify email',
+  };
+
+  let QueryString = Object.keys(options).map( (key,i) => {
+    return `${key}=` + encodeURIComponent(options[key]);
+  }).join("&");
+
+  let authURL = `${discordURL}?${QueryString}`;
+
+  $('#oauth').append(`<a href="${authURL}">Login With Discord</a>`);
+
+</script>
+
+
+</body>
+</html>
