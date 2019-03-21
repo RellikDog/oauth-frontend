@@ -6,6 +6,10 @@ const PORT = 8080;
 
 app.use(express.static('./public'));
 
+app.get('/', (request, response) => {
+  response.redirect('public/index.html');
+});
+
 app.listen(PORT, () => {
   console.log('Web Server up on port', PORT);
 });
