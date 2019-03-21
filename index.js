@@ -7,7 +7,7 @@ const PORT = 8080;
 app.use(express.static('./public'));
 
 app.get('/', (request, response) => {
-  response.send('public/index.html');
+  response.render('public/index.html');
 });
 
 app.listen(PORT, () => {
