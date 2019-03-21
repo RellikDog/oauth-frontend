@@ -6,32 +6,32 @@
 <body>
 <main>
 
-    <div id="oauth"></div>
+    <div id="oauth"><a href="https://discordapp.com/api/oauth2/authorize?client_id=556605538662612997&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Foauth&response_type=code&scope=identify%20email"></a> Login to Discord</div>
 
 </main>
 
-<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<!--<script src="http://code.jquery.com/jquery-3.3.1.js"></script>-->
 
-<script>
+<!--<script>-->
 
-  let discordURL = "https://discordapp.com/api/oauth2/authorize";
+  <!--let discordURL = "https://discordapp.com/api/oauth2/authorize";-->
 
-  let options = {
-    client_id:'556605538662612997',
-    redirect_uri: 'http://localhost:3000/oauth',
-    response_type: 'code',
-    scope: 'identify email',
-  };
+  <!--let options = {-->
+    <!--client_id:'556605538662612997',-->
+    <!--redirect_uri: 'http://localhost:3000/oauth',-->
+    <!--response_type: 'code',-->
+    <!--scope: 'identify email',-->
+  <!--};-->
 
-  let QueryString = Object.keys(options).map( (key,i) => {
-    return `${key}=` + encodeURIComponent(options[key]);
-  }).join("&");
+  <!--let QueryString = Object.keys(options).map( (key,i) => {-->
+    <!--return `${key}=` + encodeURIComponent(options[key]);-->
+  <!--}).join("&");-->
 
-  let authURL = `${discordURL}?${QueryString}`;
+  <!--let authURL = `${discordURL}?${QueryString}`;-->
 
-  $('#oauth').append(`<a href="${authURL}">Login With Discord</a>`);
+  <!--$('#oauth').append(`<a href="${authURL}">Login With Discord</a>`);-->
 
-</script>
+<!--</script>-->
 
 
 </body>
