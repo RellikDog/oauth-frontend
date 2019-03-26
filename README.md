@@ -7,7 +7,7 @@ Learning how to use Oauth and connecting frontend to backend.
 [![Build Status](https://travis-ci.org/consihon/oauth-backend.svg?branch=master)](https://travis-ci.org/consihon/oauth-backend)
 
 
-### Author: Erik M Johnson
+### Author: Conor Sihon, Erik Johnson, Richard Bellamy
 
 ### Links and Resources
 * [BackEnd - Repo](https://github.com/consihon/oauth-backend)
